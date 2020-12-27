@@ -95,7 +95,7 @@ function PlayState:update(dt)
                 -- multiply recover points by 2
                 self.recoverPoints = math.min(100000, self.recoverPoints * 2)
 
-                -- PADDLE SIZE UPDATE: if gains certain amount of point, then paddle SHRINKS.
+                -- PADDLE SIZE UPDATE: if gains certain amount of point, then paddle EXPANDS.
                 if self.paddle.size < 3 then
                     self.paddle.size = self.paddle.size + 1
                     self.paddle.width = self.paddle.width + 32
